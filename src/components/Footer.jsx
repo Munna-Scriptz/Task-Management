@@ -1,64 +1,53 @@
 import React from 'react'
 import Logo from '../assets/images/Logo.svg'
 import { Link } from 'react-router'
-import Apple from '../assets/images/AppleIcon.png'
-import Play from '../assets/images/PlaystoreIcon.png'
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { PiInstagramLogoFill } from "react-icons/pi";
-import { FaYoutube } from "react-icons/fa";
+import { MdOutlineEmail } from 'react-icons/md'
 
 const Footer = () => {
   return (
     <>
-        <footer className='pb-[48px] pt-[64px]'>
+        <footer className='pb-[64px] pt-[72px]'>
             <div className="container">
-                <div id="Footer-Row" className='flex flex-col items-center'>
-                    {/* -------Footer Logo------- */}
-                    <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
-                    {/* -------Footer Links------- */}
-                    <ul className='flex items-center gap-[56px] mt-[48px]'>
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Home</Link></li>
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Features</Link></li>
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Overview</Link></li>
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Blog</Link></li>
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Contact</Link></li> 
-                        <li className='text-gray800 text-base'><Link id='UnderLineHover' to={'/'}>Account</Link></li> 
-                    </ul>
-                    {/* -------Footer Button------- */}
-                    <div className='mt-[64px] flex items-center gap-[24px]'>
-                            <a href='#' className='bg-gray900 flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]'>
-                                <img src={Apple} alt="icon" />
-                                <div>
-                                    <p className='text-white text-sm leading-[15px]'>Download on the</p>
-                                    <h2 className='text-[20px] text-white font-semibold leading-[26px]'>Apple Store</h2>
+                <div id="Footer-Row" className='flex justify-between items-start'>
+                    {/* ---------First row------------ */}
+                    <div>
+                        <img src={Logo} alt="Logo" />
+                        <p className='text-gray700 text-sm font-normal leading-[160%] w-[416px] mt-6'>Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. </p>
+                        <div className='mt-[40px]'>
+                            <p className='text-gray900 font-semibold text-sm mb-2'>Subscribe to our newsletter</p>
+                            <div className='w-[416px] h-[52px] border-1 border-gray400 bg-white rounded-[8px] flex justify-between items-center'>
+                                <div className='flex items-center w-full'>
+                                    <MdOutlineEmail className='text-gray500 text-[20px] ml-[16px]'/>
+                                    <input className='h-full rounded-[8px] outline-none pl-[8px] w-full' type="text" placeholder='Your Email'/>
                                 </div>
-                            </a>
-                            <a href='#' className='bg-gray900 flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]'>
-                                <img src={Play} alt="icon" />
-                                <div>
-                                    <p className='text-white text-sm leading-[15px]'>GET IT ON</p>
-                                    <h2 className='text-[20px] text-white font-semibold leading-[26px]'>Google Play</h2>
-                                </div>
-                            </a>
+                                <button className='bg-brand h-full text-white w-[164px] text-center text-base font-semibold rounded-r-[8px] cursor-pointer'>Subscribe</button>
+                            </div>
+                            <p className='text-gray600 text-[12px] mt-[72px]'>2021. All rights reserved. Silicon Template</p>
+                        </div>
                     </div>
-                    {/* -------Footer Social Links------- */}
-                    <div className='mt-[56px] flex items-center gap-[16px]'>
-                        <Link to={'/'} className='text-gray800 text-[18px] w-[44px] h-[44px] bg-[#EFF2FC] rounded-[6px] flex items-center justify-center duration-[.3s] hover:bg-brand hover:text-gray300 '>
-                            <FaFacebookSquare />
-                        </Link>
-                        <Link to={'/'} className='text-gray800 text-[18px] w-[44px] h-[44px] bg-[#EFF2FC] rounded-[6px] flex items-center justify-center duration-[.3s] hover:bg-brand hover:text-gray300 '>
-                            <FaTwitter />
-                        </Link>
-                        <Link to={'/'} className='text-gray800 text-[18px] w-[44px] h-[44px] bg-[#EFF2FC] rounded-[6px] flex items-center justify-center duration-[.3s] hover:bg-brand hover:text-gray300 '>
-                            <PiInstagramLogoFill />
-                        </Link>
-                        <Link to={'/'} className='text-gray800 text-[18px] w-[44px] h-[44px] bg-[#EFF2FC] rounded-[6px] flex items-center justify-center duration-[.3s] hover:bg-brand hover:text-gray300 '>
-                            <FaYoutube />
-                        </Link>
+                    {/* ---------Second row------------ */}
+                    <div className='flex flex-col gap-2 text-gray800 text-base font-semibold'>
+                        <Link to={'/'}>Home</Link>
+                        <Link to={'/'}>Features</Link>
+                        <Link to={'/'}>Integrations</Link>
+                        <Link to={'/'}>Our Clients</Link>
+                        <Link to={'/'}>Blog</Link>
+                        <br />
+                        <Link to={'/'}>Terms & Conditions</Link>
+                        <Link to={'/'}>Privacy Policy</Link>
                     </div>
-                    {/* -------Footer Copyright------- */}
-                    <p className='text-gray600 text-[14px] text-center mt-[72px] w-[856px]'>2021. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>
+                    {/* ---------Third row------------ */}
+                    <div className='flex flex-col gap-2 text-gray800 text-base font-semibold'>
+                        <Link to={'/'}>Facebook</Link>
+                        <Link to={'/'}>Linkedin</Link>
+                        <Link to={'/'}>Twitter</Link>
+                        <Link to={'/'}>Instagram</Link>
+                    </div>
+                    {/* ---------Fourth row------------ */}
+                    <div className='flex flex-col gap-2 text-gray800 text-base font-semibold'>
+                        <Link to={'/'}>Contact Us</Link>
+                        <Link className='text-brand' to={'/'}>munnascripz@gmail.com</Link>
+                    </div>
                 </div>
             </div>
         </footer>

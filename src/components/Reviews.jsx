@@ -11,7 +11,9 @@ const Reviews = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        autoplay: true,
+        speed: 1500,
+        autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <FaAngleRight />,
