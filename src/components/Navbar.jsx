@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../assets/images/Logo.svg'
 import { Link } from 'react-router'
 import { FiUser } from "react-icons/fi";
+import { IoLogInOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
@@ -31,10 +32,17 @@ const Navbar = () => {
                             <p className='font-manrope font-semibold text-gray700'>Dark</p>
                         </div>
                         {/* --------Button-------- */}
-                        <button className='bg-brand py-[9px] px-[20px] text-white flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
-                            <FiUser />
-                            <span>Sign in / up</span>
-                        </button>
+                        <div className='flex items-baseline gap-4'>
+                            <button className='bg-gray200 py-[9px] hover:bg-brand hover:text-white duration-[.3s] px-[20px] text-gray800 flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <IoLogInOutline className='text-lg'/>
+                                <span>Login</span>
+                            </button>
+                            <button className='bg-brand py-[9px] px-[20px] hover:bg-gray200 hover:text-gray800 duration-[.3s] text-white flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <FiUser className='text-lg'/>
+                                <span>Sign</span>
+                            </button>
+
+                        </div>
                     </div>
                 </div>
             </div>
