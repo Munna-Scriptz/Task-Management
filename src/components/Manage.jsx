@@ -1,16 +1,17 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
-import Manage from '../assets/images/ManageImage.png'
-const Features = () => {
+import ManageImg from '../assets/images/ManageImage.png'
+
+const Manage = () => {
   return (
     <>
-        <section id='Features' className='mt-[112px]'>
+        <section id='Manage' className='mt-[112px]'>
             <div className="container">
-                <div id="Feature-Row" className='flex items-center justify-between'>
+                <div id="Manage-Row" className='flex items-center justify-between'>
                     {/* -------------Left Side------------ */}
                     <div>
-                        <img src={Manage} alt="Image" />
+                        <img src={ManageImg} alt="Image" />
                     </div>
                     {/* -------------Right Side------------ */}
                     <div>
@@ -46,4 +47,4 @@ const Features = () => {
   )
 }
 
-export default Features
+export default Manage

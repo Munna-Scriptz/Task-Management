@@ -1,21 +1,21 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Features from '../components/Manage'
-import Reviews from '../components/Reviews'
-import Subscribe from '../components/Subscribe'
-import Use from '../components/Use'
+import Manage from '../components/Manage'
+// import Subscribe from '../components/Subscribe'
 import Organized from '../components/Organized'
+import Tool from '../components/Tool'
+import Pricing from '../components/Pricing'
 
 const Home = () => {
   return (
     <>
       <Banner/>
       <Organized/>
+      <Manage/>
+      <Tool/>
+      <Pricing/>
       {/* ----Old---- */}
-      <Features/>
-      <Use/>
-      <Reviews/>
-      <Subscribe/>
+      {/* <Subscribe/>  */}
     </>
   )
 }

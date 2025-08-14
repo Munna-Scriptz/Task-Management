@@ -1,0 +1,55 @@
+import React from 'react'
+import { FaRegStar } from "react-icons/fa6";
+import { MdWorkOutline } from "react-icons/md";
+import { GoRocket } from "react-icons/go";
+import { BiBarChartAlt2 } from "react-icons/bi";
+import ToolImg from '../assets/images/ToolImg.png'
+const Tool = () => {
+  return (
+    <>
+        <section id='Tool' className='mt-[96px]'>
+            <div className="container">
+                <div id="Tool-Row">
+                    {/* -------------Header-------------- */}
+                    <div><h2 className='text-gray900 text-[40px] font-extrabold text-center'>One Tool — Endless Use Cases</h2></div>
+                    <div className='flex items-center justify-center'>
+                        <div className='mt-[40px] flex items-center gap-[16px]'>
+                            <button className='bg-brand py-[12px] px-[16px] shadow-lg duration-[.3s] text-white flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <FaRegStar />
+                                <span>Project Management</span>
+                            </button>
+                            <button className='bg-gray200 active:bg-brand active:text-white text-gray800 py-[12px] px-[16px] shadow-lg duration-[.3s] flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <MdWorkOutline />
+                                <span>Remote Work</span>
+                            </button>
+                            <button className='bg-gray200 active:bg-brand active:text-white text-gray800 py-[12px] px-[16px] shadow-lg duration-[.3s] flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <GoRocket />
+                                <span>Product Release</span>
+                            </button>
+                            <button className='bg-gray200 active:bg-brand active:text-white text-gray800 py-[12px] px-[16px] shadow-lg duration-[.3s] flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
+                                <BiBarChartAlt2 />
+                                <span>Campaign Planning</span>
+                            </button>
+                        </div>
+                    </div>
+                    {/* -------------Items Show-------------- */}
+                    <div className='bg-gray100 py-[48px] mt-[40px] flex items-center justify-between'>
+                        {/* -----------Left Side---------- */}
+                        <div>
+                            <h2 className='text-gray900 text-[28px] font-extrabold'>Project management</h2>
+                            <p className='text-gray700 text-base font-normal w-[416px] mt-3.5 leading-[160%]'>Vestibulum nunc lectus auctor quis. Natoque lectus tortor lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi. Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel dignissim morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
+                        </div>
+                        {/* -----------Left Side---------- */}
+                        <div>
+                            <img src={ToolImg} alt="Image" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </>
+  )
+}
+
+export default Tool
