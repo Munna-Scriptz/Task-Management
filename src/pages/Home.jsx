@@ -5,6 +5,8 @@ import Manage from '../components/Manage'
 import Organized from '../components/Organized'
 import Tool from '../components/Tool'
 import Pricing from '../components/Pricing'
+import Reviews from '../components/Reviews'
+import Migrate from '../components/Migrate'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <Manage/>
       <Tool/>
       <Pricing/>
+      <Reviews/>
+      <Migrate/>
       {/* ----Old---- */}
       {/* <Subscribe/>  */}
     </>

@@ -6,7 +6,7 @@ body{
     box-shadow: rgba(104, 87, 190, 0.788) 0px 20px 30px -10px;
 }
 #SliderBoxShadow{
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #UnderLineHover{
     position: relative;
@@ -35,11 +35,14 @@ body{
 
 /* ------------Slider Css-------------- */
 .slick-prev {
-    left: -25px;
+    left: 525px !important;
+    top: 75px !important;
     color: black !important;
+    z-index: 10;
 }
 .slick-next {
-    right: -25px;
+    top: 76px !important;
+    right: 38px !important;
     color: black !important;
 }
 .slick-initialized .slick-slide {
@@ -49,5 +52,14 @@ body{
 }
 .slick-dots li.slick-active button:before {
     opacity: 1 !important;
+    color: #6366F1 !important;
+}
+.slick-dots li {
+    margin: 0 !important;
+}
+.slick-dots {
+    bottom: 25px !important;
+}
+.slick-dots li button:hover {
     color: #6366F1 !important;
 }
