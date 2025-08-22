@@ -57,9 +57,9 @@ const Organized = () => {
             <div className="container">
                 <div id="Use-Row">
                     {/* ------------Header------------ */}
-                    <div><h2 className='text-gray900 text-[40px] font-extrabold text-center'>Stay Organized & Connected</h2></div>
+                    <div><h2 className='text-gray900 lg:text-[40px] text-[32px] font-extrabold text-center'>Stay Organized & Connected</h2></div>
                     {/* ------------List------------ */}
-                    <div className='flex items-center justify-between mt-[64px] gap-y-[56px] flex-wrap'>
+                    <div className='flex items-center justify-center md:justify-between  mt-[64px] lg:gap-y-[56px] gap-y-[39px] flex-wrap'>
                         {
                             MyOrganized.map((item , e)=>(
                             <div className='w-[298px] flex items-center flex-col gap-6'>
