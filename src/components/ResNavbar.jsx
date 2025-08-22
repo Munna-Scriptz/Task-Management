@@ -2,14 +2,15 @@ import React, { useState } from 'react'
 import Logo from '../assets/images/Logo.svg'
 import { Link } from 'react-router'
 import { FaBarsStaggered } from 'react-icons/fa6';
-import { MdNightlightRound } from 'react-icons/md';
+import { MdNightlightRound, MdOutlineLightMode } from 'react-icons/md';
 import { IoHomeOutline } from 'react-icons/io5';
 import { LuShoppingBag } from 'react-icons/lu';
 import { MdOutlineGroup } from 'react-icons/md';
-import { RiShoppingCart2Line, RiUserLine } from 'react-icons/ri';
+import { RiUserLine } from 'react-icons/ri';
 import { TbArrowsJoin } from 'react-icons/tb';
 const ResNavbar = () => {
   const [Value , SetValue] = useState(true)
+  const [theme , setTheme] = useState(true)
   return (
     <>
     <nav className='lg:hidden block'>
@@ -20,7 +21,12 @@ const ResNavbar = () => {
                 </div>
                 {/* -----------Nav button--------  */}
                 <div className='flex items-center gap-5 text-2xl'>
-                    <MdNightlightRound className='cursor-pointer'/>
+                    {
+                        theme?
+                        <MdNightlightRound onClick={()=>setTheme(!theme)} className='cursor-pointer'/>
+                        :
+                        <MdOutlineLightMode onClick={()=>setTheme(!theme)} className='cursor-pointer'/>
+                    }
                     <FaBarsStaggered onClick={()=>SetValue(!Value)} className='cursor-pointer'/>
                 </div>
             </div>
