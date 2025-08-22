@@ -7,11 +7,11 @@ import { IoLogInOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
     <>
-        <nav>
+        <nav className='lg:block hidden'>
             <div className="container">
                 <div id="NavBar_Row" className='py-[25px] flex items-center justify-between'>
                     <div className='flex items-center gap-[48px]'>
-                        <img src={Logo} alt="Logo" />
+                        <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
                         <ul className='flex items-center gap-[24px] font-manrope font-semibold text-base text-gray800'>
                             <li><Link id='UnderLineHover' to={'/'}>Features</Link></li>
                             <li><Link id='UnderLineHover' to={'/'}>Overview</Link></li>
