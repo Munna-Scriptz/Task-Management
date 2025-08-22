@@ -41,7 +41,7 @@ body{
     z-index: 10;
 }
 .slick-next {
-    top: 76px !important;
+    top: 75px !important;
     right: 38px !important;
     color: black !important;
 }
@@ -62,4 +62,12 @@ body{
 }
 .slick-dots li button:hover {
     color: #6366F1 !important;
+}
+@media (min-width: 320px) and (max-width: 576px) { 
+.slick-prev {
+    left: 215px !important;
+}
+.slick-next {
+    right: 38px !important;
+}
 }
