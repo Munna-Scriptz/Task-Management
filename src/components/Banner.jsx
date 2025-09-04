@@ -9,11 +9,11 @@ import BannerImage from '../assets/images/BannerImage.png'
 const Banner = () => {
   return (
     <>
-        <section id='Banner' className='relative lg:mt-[112px] mt-[50px]'>
+        <section id='Banner' className='relative lg:mt-[112px] mt-[50px] overflow-hidden'>
             <div className="container">
                 <div id="Banner-Row" className='flex lg:flex-row flex-col items-center justify-between'>
                     {/* ---------Banner Text--------- */}
-                    <div>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="500">
                         <h1 className='lg:text-[56px] text-[28px] text-gray900 lg:w-[526px] font-extrabold leading-[130%]'>Task Management Assistant You Gonna Love</h1>
                         <p className='lg:text-[18px] text-[14px] text-gray700 lg:w-[526px] font-normal mt-[24px]'>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p>
                         {/* ---------Buttons--------- */}
@@ -23,8 +23,8 @@ const Banner = () => {
                             </button>
                         </div>
                         {/* ---------Brands--------- */}
-                        <p className='text-gray900 text-base font-extrabold lg:mt-[112px] mt-[50px]'>Largest companies use our tool to work efficiently</p>
-                        <div className='flex items-center gap-6 mt-10'>
+                        <p className='text-gray900 text-base font-extrabold lg:mt-[112px] mt-[50px]' data-aos="fade-up">Largest companies use our tool to work efficiently</p>
+                        <div className='flex items-center gap-6 mt-10' data-aos="fade-up">
                             <Link to={'/'}><img src={Brand1} alt="Brands" /></Link>
                             <Link to={'/'}><img src={Brand2} alt="Brands" /></Link>
                             <Link to={'/'}><img src={Brand3} alt="Brands" /></Link>
@@ -32,7 +32,7 @@ const Banner = () => {
                         </div>
                     </div>
                     {/* ---------Banner Image--------- */}
-                    <div className='lg:absolute top-[-120px] right-0 max-w-[1058px] lg:min-w-[800px] lg:w-[700px]'>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="600" className='lg:absolute top-[-120px] right-0 max-w-[1058px] lg:min-w-[800px] lg:w-[700px]'>
                         <img src={BannerImage} alt="Banner Image" />
                     </div>
                 </div>

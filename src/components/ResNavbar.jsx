@@ -13,7 +13,7 @@ const ResNavbar = () => {
   const [theme , setTheme] = useState(true)
   return (
     <>
-    <nav className='lg:hidden block'>
+    <nav className='lg:hidden block' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <div className="container">
             <div id="NavBar_Row" className='py-[20px] flex items-center justify-between'>
                 <div className='w-[110px]'>

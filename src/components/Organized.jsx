@@ -57,12 +57,12 @@ const Organized = () => {
             <div className="container">
                 <div id="Use-Row">
                     {/* ------------Header------------ */}
-                    <div><h2 className='text-gray900 lg:text-[40px] text-[32px] font-extrabold text-center'>Stay Organized & Connected</h2></div>
+                    <div><h2 className='text-gray900 lg:text-[40px] text-[32px] font-extrabold text-center' data-aos="fade-up">Stay Organized & Connected</h2></div>
                     {/* ------------List------------ */}
                     <div className='flex items-center justify-center md:justify-between  mt-[64px] lg:gap-y-[56px] gap-y-[39px] flex-wrap'>
                         {
                             MyOrganized.map((item , e)=>(
-                            <div className='w-[298px] flex items-center flex-col gap-6'>
+                            <div data-aos="fade-up" className='w-[298px] flex items-center flex-col gap-6'>
                                 <div><img src={item.icon} alt="icon" /></div>
                                 <div>
                                     <h2 className='text-gray900 text-xl font-extrabold text-center'>{item.upperText}</h2>

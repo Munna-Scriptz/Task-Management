@@ -13,8 +13,8 @@ const Pricing = () => {
             <div className="container">
                 <div id="Pricing-Row">
                     {/* ------------Header-------------- */}
-                    <div><h2 className='text-gray900 lg:text-[40px] text-[32px] font-extrabold text-center'>Transparent Pricing for You</h2></div>
-                    <div className='flex items-center justify-center mt-10'>
+                    <div><h2 className='text-gray900 lg:text-[40px] text-[32px] font-extrabold text-center' data-aos="fade-up">Transparent Pricing for You</h2></div>
+                    <div className='flex items-center justify-center mt-10' data-aos="fade-up">
                         <div className='flex items-center gap-[16px]'>
                             <p className='font-manrope font-semibold text-gray700'>Bill Monthly</p>
                             <label className="relative inline-flex items-center cursor-pointer">
@@ -26,9 +26,9 @@ const Pricing = () => {
                         </div>
                     </div>
                     {/* ------------Pricing Card-------------- */}
-                    <div className='flex lg:flex-row flex-col lg:gap-y-0 gap-y-5 items-center justify-between mt-10'>
+                    <div className='flex lg:flex-row flex-col lg:gap-x-4 gap-y-5 items-center justify-between mt-10'>
                         {/* -------------First Card------------- */}
-                        <div className='lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]' data-aos="fade-up">
                             <div><img src={Wrincle} alt="Emoji" /></div>
                             <div>
                                 <p className='text-gray600 text-lg mb-1'>Basic</p>
@@ -66,7 +66,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* -------------Second Card------------- */}
-                        <div className='relative lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='relative lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]' data-aos="fade-up">
                             <div><img src={smile} alt="Emoji" /></div>
                             {/* ------------Status------------- */}
                             <div className='absolute top-[16px] left-0 drop-shadow-md drop-shadow-success bg-success py-[6px] px-[8px] text-white text-sm font-semibold rounded-r-[4px] flex items-center gap-1'><FaRegStar className='text-[14px]'/><p>Popular</p></div>
@@ -107,7 +107,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* -------------Third Card------------- */}
-                        <div className='lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='lg:w-[416px] lg:p-10 p-7 border-1 border-gray300 rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]' data-aos="fade-up">
                             <div><img src={beaming} alt="Emoji" /></div>
                             <div>
                                 <p className='text-gray600 text-lg mb-1'>Basic</p>
