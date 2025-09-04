@@ -40,17 +40,17 @@ const Reviews = () => {
     ]
   return (
     <>
-        <section id='Reviews' className='mt-[112px] bg-gray100 py-[96px]'>
+        <section id='Reviews' className='mt-[112px] bg-gray100 py-[96px] overflow-hidden'>
             <div className="container">
                 <div id="Reviews-Row" className='flex lg:flex-row flex-col items-center justify-between'>
                     {/* --------------Left Side------------- */}
-                    <div className='bg-gray900 lg:p-[48px] p-[38px] lg:mb-0 mb-10 lg:pb-[113px] pb-[60px] rounded-[8px] lg:w-[610px] w-full'>
+                    <div className='bg-gray900 lg:p-[48px] p-[38px] lg:mb-0 mb-10 lg:pb-[113px] pb-[60px] rounded-[8px] lg:w-[610px] w-full' data-aos="fade-right">
                         <h2 className='text-white lg:text-[80px] text-[40px] font-extrabold'>420k</h2>
                         <p className='text-[#FFFFFFB2] lg:text-2xl text-lg leading-[160%] font-semibold'>users are taking advantage of our <span className='font-extrabold text-white'>Task Manager Tool</span>. It’s a new transparent and efficient way to organize all of your daily tasks.</p>
                     </div>
                     {/* --------------Right Side------------- */}
                         
-                    <div id='SliderBoxShadow' className="slider-container lg:w-[636px] w-full shrink-0">
+                    <div id='SliderBoxShadow' className="slider-container lg:w-[636px] w-full shrink-0" data-aos="fade-left">
                         <Slider {...settings}>
                             {
                                 MyReviews.map((item,e)=>(
