@@ -8,6 +8,29 @@ import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
 const Reviews = () => {
+    function NextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      onClick={onClick}
+      className="absolute right-[38px] top-[65px] cursor-pointer z-10"
+    >
+      <FaAngleRight fill="#000" size={25} />
+    </div>
+  );
+}
+
+function PrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      onClick={onClick}
+      className="absolute left-[525px] top-[65px] cursor-pointer z-10"
+    >
+      <FaAngleLeft fill="#000" size={25}/>
+    </div>
+  );
+}
     const settings = {
         dots: true,
         infinite: true,
@@ -16,8 +39,8 @@ const Reviews = () => {
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <FaAngleRight />,
-        prevArrow: <FaAngleLeft />
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
     };
 
     const MyReviews = [
