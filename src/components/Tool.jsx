@@ -33,7 +33,7 @@ const Tool = () => {
                         </div>
                     </div>
                     {/* -------------Items Show-------------- */}
-                    <div className='bg-gray100 py-[48px] mt-[40px] flex lg:flex-row flex-col items-center justify-between'>
+                    <div className='py-[48px] mt-[40px] flex lg:flex-row flex-col items-center justify-between'>
                         {/* -----------Left Side---------- */}
                         <div>
                             <h2 className='text-gray900 text-[28px] font-extrabold' data-aos="fade-right">Project management</h2>
